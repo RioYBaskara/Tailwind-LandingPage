@@ -14,7 +14,8 @@ module.exports = {
         hover: "#4d0013",
       },
       fontFamily: {
-        Lora: ["Lora", "serif"],
+        playfair: ["Playfair Display", "serif"],
+        lora: ["Lora", "serif"],
       },
     },
   },
