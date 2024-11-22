@@ -171,7 +171,7 @@
       <h4 class="w-full h-auto font-bold font-libre text-head4 text-end text-accent2">koleksi.</h4>
     </div>
     <div id="koleksi" class="grid w-full h-auto grid-cols-4 grid-rows-4 gap-4 px-8 py-6">
-      <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama1 group hover:bg-basehover" onclick="location.href='#diorama1';" style="cursor: pointer">
+      <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama1 group hover:bg-basehover" onclick="location.href='#koleksi';" style="cursor: pointer">
         <div class="flex flex-col content-center justify-center w-full h-full p-4">
           <div class="flex flex-col content-center w-full h-auto">
             <div class="w-full h-auto">
@@ -192,7 +192,7 @@
           <img class="object-cover w-full h-full" src="assets/img/diorama1.jpg" alt="foto diorama 1" />
         </div>
       </div>
-      <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama2 group hover:bg-basehover" onclick="location.href='#diorama2';" style="cursor: pointer">
+      <div id="diorama2" class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama2 group hover:bg-basehover" onclick="location.href='#diorama2';" style="cursor: pointer">
         <div class="w-full h-40">
           <img class="object-cover w-full h-full" src="assets/img/diorama2.jpg" alt="foto diorama 2" />
         </div>
@@ -213,7 +213,7 @@
           </div>
         </div>
       </div>
-      <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama3 group hover:bg-basehover" onclick="location.href='#diorama3';" style="cursor: pointer">
+      <div id="diorama3" class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama3 group hover:bg-basehover" onclick="location.href='#diorama3';" style="cursor: pointer">
         <div class="flex flex-col content-center justify-center w-full h-full p-4">
           <div class="flex flex-col content-center w-full h-auto">
             <div class="w-full h-auto">
@@ -234,7 +234,7 @@
           <img class="object-cover w-full h-full" src="assets/img/diorama3.jpg" alt="foto diorama 3" />
         </div>
       </div>
-      <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama4 group hover:bg-basehover" onclick="location.href='#diorama4';" style="cursor: pointer">
+      <div id="diorama4" class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama4 group hover:bg-basehover" onclick="location.href='#diorama4';" style="cursor: pointer">
         <div class="w-full h-40">
           <img class="object-cover w-full h-full" src="assets/img/diorama4.jpg" alt="foto diorama 4" />
         </div>
@@ -257,6 +257,30 @@
       </div>
     </div>
     <!-- koleksi end -->
+
+    <!-- jadwal acara -->
+    <div id="jadwal" class="flex flex-col items-center w-full px-8 py-6 bg-accent">
+      <!-- Judul -->
+      <div class="w-full py-2 text-second">
+        <h4 class="font-bold text-center font-libre text-head4">jadwal acara.</h4>
+      </div>
+      <!-- Kontainer Gambar -->
+      <div class="flex flex-col items-center w-auto px-4 py-4 space-y-4 bg-second">
+        <!-- Gambar 1 -->
+        <div class="w-full max-w-md transition-all hover:opacity-80">
+          <a href="https://vredeburg.id/id/page/event">
+            <img class="object-contain w-full h-auto rounded-lg shadow-md" src="/assets/img/musikoloji.jpg" alt="Event 1" />
+          </a>
+        </div>
+        <!-- Gambar 2 -->
+        <div class="w-full max-w-md transition-all hover:opacity-80">
+          <a href="https://vredeburg.id/id/page/event">
+            <img class="object-contain w-full h-auto rounded-lg shadow-md" src="/assets/img/water.jpg" alt="Event 2" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- jadwal cara end -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
