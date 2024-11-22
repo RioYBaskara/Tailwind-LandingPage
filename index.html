@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,7 +43,7 @@
           </button>
 
           <!-- overlay -->
-          <div id="overlay" class="fixed inset-0 z-40 hidden bg-black bg-opacity-80"></div>
+          <div id="overlay" class="fixed inset-0 z-40 hidden transition-opacity duration-300 bg-black opacity-0"></div>
 
           <!-- off-canvas menu -->
           <div id="offcanvas" class="fixed top-0 right-0 z-50 flex flex-col justify-between h-full transition-transform duration-500 transform translate-x-full w-72 bg-second">
@@ -145,16 +145,19 @@
         const $offcanvas = $("#offcanvas");
         const $overlay = $("#overlay");
 
-        // Open offcanvas and show overlay
+        // Open offcanvas and show overlay with transition
         $("#hamburger-btn").on("click", function () {
           $offcanvas.removeClass("translate-x-full").addClass("translate-x-0");
-          $overlay.removeClass("hidden");
+          $overlay.removeClass("hidden opacity-0").addClass("opacity-80");
         });
 
-        // Close offcanvas and hide overlay
+        // Close offcanvas and hide overlay with transition
         function closeOffcanvas() {
           $offcanvas.removeClass("translate-x-0").addClass("translate-x-full");
-          $overlay.addClass("hidden");
+          $overlay.removeClass("opacity-80").addClass("opacity-0");
+          setTimeout(() => {
+            $overlay.addClass("hidden");
+          }, 300); // Menyesuaikan dengan durasi transisi overlay
         }
 
         // Close using close button
@@ -162,6 +165,9 @@
 
         // Close by clicking on overlay
         $overlay.on("click", closeOffcanvas);
+
+        // Close offcanvas when clicking a navigation link
+        $(".nav a").on("click", closeOffcanvas);
       });
     </script>
   </body>
