@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
+    backgroundImage: {
+      "hero-foto": "url('/assets/img/Hero.jpg')",
+    },
     fontSize: {
       head1: ["47.78px", "56px"],
       head2: ["39.81px", "48px"],
