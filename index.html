@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benteng Vrederburg</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link href="assets/css/scroll.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
@@ -12,7 +13,7 @@
   </head>
   <body class="bg-base">
     <!-- nav -->
-    <div class="grid w-full h-auto grid-cols-4 grid-rows-1 px-8 py-6 bg-accent gap-x-4">
+    <div class="fixed z-50 grid w-full h-auto grid-cols-4 grid-rows-1 px-8 py-6 bg-accent gap-x-4">
       <div class="flex justify-between w-full h-auto col-span-4">
         <!-- logo -->
         <div>
@@ -167,10 +168,10 @@
     <!-- sejarah end -->
 
     <!-- koleksi -->
-    <div class="flex content-center justify-center w-full h-auto px-8 pt-6">
+    <div id="koleksi" class="flex content-center justify-center w-full h-auto px-8 pt-6">
       <h4 class="w-full h-auto font-bold font-libre text-head4 text-end text-accent2">koleksi.</h4>
     </div>
-    <div id="koleksi" class="grid w-full h-auto grid-cols-4 grid-rows-4 gap-4 px-8 py-6">
+    <div class="grid w-full h-auto grid-cols-4 grid-rows-4 gap-4 px-8 py-6">
       <div class="flex content-center justify-center w-full h-auto col-span-4 gap-4 transition-all diorama1 group hover:bg-basehover" onclick="location.href='#koleksi';" style="cursor: pointer">
         <div class="flex flex-col content-center justify-center w-full h-full p-4">
           <div class="flex flex-col content-center w-full h-auto">
