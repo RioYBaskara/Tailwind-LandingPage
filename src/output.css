@@ -626,6 +626,26 @@ video {
   right: -3px;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-\[1px\] {
+  right: 1px;
+}
+
+.right-\[2px\] {
+  right: 2px;
+}
+
+.right-\[2\.5px\] {
+  right: 2.5px;
+}
+
+.right-\[3px\] {
+  right: 3px;
+}
+
 .z-40 {
   z-index: 40;
 }
