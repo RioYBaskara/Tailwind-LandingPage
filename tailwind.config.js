@@ -38,6 +38,7 @@ module.exports = {
     extend: {
       colors: {
         base: "#F6F6EC",
+        basehover: "#E0E0D4",
 
         second: "#EFEDDF",
 
