@@ -351,6 +351,22 @@
 
         // Close offcanvas when clicking a navigation link
         $(".nav a").on("click", closeOffcanvas);
+
+        let lastScrollTop = 0;
+        const nav = document.querySelector(".fixed"); // Seleksi nav
+
+        window.addEventListener("scroll", function () {
+          let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (currentScroll > lastScrollTop) {
+            // Scroll ke bawah
+            nav.classList.add("hide");
+          } else {
+            // Scroll ke atas
+            nav.classList.remove("hide");
+          }
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk menangani scroll ke atas pada halaman paling atas
+        });
       });
     </script>
   </body>

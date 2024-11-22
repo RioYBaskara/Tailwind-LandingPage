@@ -1,3 +1,14 @@
 html {
   scroll-padding-top: 5rem;
 }
+
+.fixed {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.fixed.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
