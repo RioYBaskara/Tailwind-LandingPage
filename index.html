@@ -11,14 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/fontawesome/css/font-awesome.min.css" />
   </head>
+
   <body class="bg-base">
     <!-- nav -->
-    <div class="fixed z-50 grid w-full h-auto grid-cols-4 grid-rows-1 px-8 py-6 bg-accent gap-x-4">
+    <div class="fixed z-50 grid w-full h-auto grid-cols-4 grid-rows-1 px-8 py-6 bg-accent gap-x-4 md:gap-x-6 md:px-16 md:py-8">
       <div class="flex justify-between w-full h-auto col-span-4">
         <!-- logo -->
         <div>
           <a href="#Beranda">
-            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="41" fill="none" viewBox="0 0 54 41">
+            <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="54" height="41" fill="none" viewBox="0 0 54 41">
+              <path fill="#EFEDDF" d="M54 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path>
+              <path
+                fill="#EFEDDF"
+                fill-rule="evenodd"
+                d="M13.75 40.794C6.156 40.794 0 34.638 0 27.044V1h5v26.044a8.75 8.75 0 0 0 8.75 8.75c4.893 0 8.75-3.771 8.75-8.544h5v7.5a1.25 1.25 0 0 0 2.5 0v-8.875a6.25 6.25 0 0 1-7.5-6.125V7.25a6.25 6.25 0 1 1 12.5 0v27.5a1.25 1.25 0 1 0 2.5 0V7.25a6.25 6.25 0 1 1 12.5 0v27.5a6.25 6.25 0 0 1-10 5A6.222 6.222 0 0 1 36.25 41a6.222 6.222 0 0 1-3.75-1.25 6.251 6.251 0 0 1-9.466-2.47c-2.456 2.197-5.723 3.514-9.284 3.514Zm30-4.794c-.69 0-1.25-.56-1.25-1.25V7.25a1.25 1.25 0 1 1 2.5 0v27.5c0 .69-.56 1.25-1.25 1.25ZM30 19.75a1.25 1.25 0 0 1-2.5 0V7.25a1.25 1.25 0 1 1 2.5 0v12.5Z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill="#EFEDDF"
+                fill-rule="evenodd"
+                d="M7.5 27.25a6.25 6.25 0 1 0 12.5 0v-20a6.25 6.25 0 1 0-12.5 0v20Zm6.25 1.25c-.69 0-1.25-.56-1.25-1.25v-20a1.25 1.25 0 1 1 2.5 0v20c0 .69-.56 1.25-1.25 1.25Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <svg class="hidden sm:hidden md:block" xmlns="http://www.w3.org/2000/svg" width="89" height="66" fill="none" viewBox="0 0 54 41">
               <path fill="#EFEDDF" d="M54 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path>
               <path
                 fill="#EFEDDF"
@@ -36,48 +52,48 @@
           </a>
         </div>
         <!-- nav button -->
-        <div>
+        <div class="lg:hidden">
           <button id="hamburger-btn" class="flex flex-col items-center justify-center h-full gap-2 focus:outline-none">
-            <div class="w-8 h-1 transition-transform bg-second"></div>
-            <div class="w-8 h-1 transition-opacity bg-second"></div>
-            <div class="w-8 h-1 transition-transform bg-second"></div>
+            <div class="w-8 h-1 transition-transform md:w-10 bg-second"></div>
+            <div class="w-8 h-1 transition-opacity md:w-10 bg-second"></div>
+            <div class="w-8 h-1 transition-transform md:w-10 bg-second"></div>
           </button>
 
           <!-- overlay -->
           <div id="overlay" class="fixed inset-0 z-40 hidden transition-opacity duration-300 bg-black opacity-0"></div>
 
           <!-- off-canvas menu -->
-          <div id="offcanvas" class="fixed top-0 right-0 z-50 flex flex-col justify-between h-full transition-transform duration-500 transform translate-x-full w-72 bg-second">
-            <div class="flex content-center justify-between w-full h-auto px-6 py-4 bg-accent2">
-              <h6 class="text-base font-[600] text-head6 font-lora">Benteng<br />Vrederburg.</h6>
+          <div id="offcanvas" class="fixed top-0 right-0 z-50 flex flex-col justify-between h-full transition-transform duration-500 transform translate-x-full w-72 bg-second md:w-96">
+            <div class="flex content-center justify-between w-full h-auto px-8 py-6 bg-accent2 md:px-16 md:py-8">
+              <h6 class="text-base font-[600] text-head6 md:text-head4 font-lora">Benteng<br />Vrederburg.</h6>
               <button id="close-btn" class="text-base text-xl font-bold focus:outline-none">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <svg class="w-6 h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
 
             <!-- nav -->
-            <div class="w-full h-auto px-6 nav">
-              <div class="pb-4 text-accent2">
-                <a href="#" class="text-prlarge font-lora">Beranda</a>
+            <div class="w-full h-auto px-6 nav md:px-12">
+              <div class="pb-4 md:pb-8 text-accent2">
+                <a href="#" class="text-prlarge md:text-head4 font-lora">Beranda</a>
               </div>
-              <div class="pb-4 text-accent2">
-                <a href="#jambuka" class="text-prlarge font-lora">Jam Buka &amp; Tiket</a>
+              <div class="pb-4 md:pb-8 text-accent2">
+                <a href="#jambuka" class="text-prlarge md:text-head4 font-lora">Jam Buka &amp; Tiket</a>
               </div>
-              <div class="pb-4 text-accent2">
-                <a href="#sejarah" class="text-prlarge font-lora">Sejarah</a>
+              <div class="pb-4 md:pb-8 text-accent2">
+                <a href="#sejarah" class="text-prlarge md:text-head4 font-lora">Sejarah</a>
               </div>
-              <div class="pb-4 text-accent2">
-                <a href="#koleksi" class="text-prlarge font-lora">Koleksi</a>
+              <div class="pb-4 md:pb-8 text-accent2">
+                <a href="#koleksi" class="text-prlarge md:text-head4 font-lora">Koleksi</a>
               </div>
               <div class="text-accent2">
-                <a href="#jadwal" class="text-prlarge font-lora">Jadwal Acara</a>
+                <a href="#jadwal" class="text-prlarge md:text-head4 font-lora">Jadwal Acara</a>
               </div>
             </div>
 
             <!-- social page -->
-            <div class="flex content-center justify-between w-full h-auto px-6 py-4 text-base bg-accent2">
+            <div class="flex content-center justify-between w-full h-auto px-6 py-4 text-base bg-accent2 md:px-12 md:py-8">
               <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
               <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
               <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
@@ -91,7 +107,7 @@
     <!-- nav end -->
 
     <!-- hero -->
-    <div id="Beranda" class="grid w-full h-[34.5rem] grid-cols-4 grid-rows-1 px-8 py-6 bg-hero-foto bg-center bg-cover gap-x-4">
+    <div id="Beranda" class="grid w-full h-[34.5rem] grid-cols-4 grid-rows-1 px-8 py-6 bg-[url('/assets/img/Hero.jpg')] bg-center bg-cover gap-x-4">
       <div class="flex flex-col justify-center w-full h-full col-span-4 py-8 space-y-16">
         <!-- heading -->
         <div class="flex flex-col content-start justify-start w-full h-auto space-y-2">
@@ -105,7 +121,7 @@
         <div class="flex justify-end w-full h-auto">
           <a href="#jambuka">
             <button
-              class="flex items-center justify-center h-[51px] px-[32px] py-[20px] gap-[8px] text-base font-bold text-base border-2 border-base border-opacity-50 hover:border-accent hover:border-opacity-100 hover:bg-hover hover:gap-[12px] transition-all delay-75"
+              class="flex items-center justify-center h-[51px] px-[32px] py-[20px] gap-[8px] font-bold text-base border-2 border-base border-opacity-50 hover:border-accent hover:border-opacity-100 hover:bg-hover hover:gap-[12px] transition-all delay-75"
             >
               <span class="w-auto h-auto font-lora text-[10px] font-extralight tracking-[.2em]">SELENGKAPNYA</span>
               <!-- Arrow Icon -->

@@ -695,6 +695,10 @@ video {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -890,7 +894,7 @@ video {
   background-color: rgb(239 237 223 / var(--tw-bg-opacity, 1));
 }
 
-.bg-hero-foto {
+.bg-\[url\(\'\/assets\/img\/Hero\.jpg\'\)\] {
   background-image: url('/assets/img/Hero.jpg');
 }
 
@@ -1183,7 +1187,41 @@ video {
   width: 33.333333%;
 }
 
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
+  }
+
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -1197,9 +1235,42 @@ video {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .md\:text-head4 {
+    font-size: 27.65px;
+    line-height: 32px;
+  }
+
+  .md\:text-head5 {
+    font-size: 23.04px;
+    line-height: 32px;
+  }
+
+  .md\:text-head3 {
+    font-size: 33.18px;
+    line-height: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
