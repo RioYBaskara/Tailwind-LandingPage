@@ -904,6 +904,14 @@ video {
   background-image: url('/tailwindlp/assets/img/Hero.jpg');
 }
 
+.bg-\[url\(\'\/\.\/assets\/img\/Hero\.jpg\'\)\] {
+  background-image: url('/./assets/img/Hero.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Hero\.jpg\'\)\] {
+  background-image: url('./assets/img/Hero.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }

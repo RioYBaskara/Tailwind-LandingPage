@@ -1,0 +1,25 @@
+html {
+  scroll-padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+}
+.fixed {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.fixed.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
