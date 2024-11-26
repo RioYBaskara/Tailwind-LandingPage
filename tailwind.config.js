@@ -91,6 +91,7 @@ module.exports = {
         accent: "#C2B280",
         accent2: "#071531",
 
+        hover1: "#800020",
         hover: "#4d0013",
       },
       fontFamily: {
