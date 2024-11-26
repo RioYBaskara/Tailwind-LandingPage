@@ -900,6 +900,10 @@ video {
   background-image: url('/assets/img/Hero.jpg');
 }
 
+.bg-\[url\(\'\/tailwindlp\/assets\/img\/Hero\.jpg\'\)\] {
+  background-image: url('/tailwindlp/assets/img/Hero.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1469,6 +1473,11 @@ video {
     font-size: 20px;
   }
 
+  .lg\:text-footernavlg {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .lg\:text-footertitlelg {
     font-size: 16px;
     line-height: 16px;
@@ -1491,11 +1500,6 @@ video {
 
   .lg\:text-prlarge {
     font-size: 19.2px;
-    line-height: 24px;
-  }
-
-  .lg\:text-footernavlg {
-    font-size: 16px;
     line-height: 24px;
   }
 
