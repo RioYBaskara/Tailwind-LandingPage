@@ -1502,4 +1502,14 @@ video {
   .lg\:text-\[20px\] {
     font-size: 20px;
   }
+
+  .lg\:text-head2 {
+    font-size: 39.81px;
+    line-height: 48px;
+  }
+
+  .lg\:text-head4 {
+    font-size: 27.65px;
+    line-height: 32px;
+  }
 }
