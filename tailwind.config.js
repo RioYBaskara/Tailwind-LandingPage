@@ -32,9 +32,9 @@ module.exports = {
         },
       ],
 
-      footernav: [
-        "6px",
-        "8px",
+      footernavlg: [
+        "16px",
+        "24px",
         {
           fontWeight: "400",
         },
@@ -46,7 +46,21 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      footernav: [
+        "6px",
+        "8px",
+        {
+          fontWeight: "400",
+        },
+      ],
 
+      footertitlelg: [
+        "16px",
+        "16px",
+        {
+          fontWeight: "400",
+        },
+      ],
       footertitlemd: [
         "12px",
         "16px",
