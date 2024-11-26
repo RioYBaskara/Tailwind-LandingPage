@@ -77,6 +77,11 @@ module.exports = {
       ],
     },
     extend: {
+      backgroundImage: {
+        hero: "url('./assets/img/Hero.jpg')",
+        jadwal1: "url('./assets/img/musikoloji.jpg')",
+        jadwal2: "url('./assets/img/water.jpg')",
+      },
       colors: {
         base: "#F6F6EC",
         basehover: "#E0E0D4",

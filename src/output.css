@@ -896,19 +896,7 @@ video {
   background-color: rgb(239 237 223 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'\/assets\/img\/Hero\.jpg\'\)\] {
-  background-image: url('/assets/img/Hero.jpg');
-}
-
-.bg-\[url\(\'\/tailwindlp\/assets\/img\/Hero\.jpg\'\)\] {
-  background-image: url('/tailwindlp/assets/img/Hero.jpg');
-}
-
-.bg-\[url\(\'\/\.\/assets\/img\/Hero\.jpg\'\)\] {
-  background-image: url('/./assets/img/Hero.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/Hero\.jpg\'\)\] {
+.bg-hero {
   background-image: url('./assets/img/Hero.jpg');
 }
 
