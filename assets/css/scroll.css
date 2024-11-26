@@ -8,6 +8,11 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+}
 .fixed {
   transition:
     transform 0.3s ease,
